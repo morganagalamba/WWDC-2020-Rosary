@@ -26,10 +26,10 @@ while aux<51 {
     } else if aux<6 {
         let terco = UIImage(named: "\(name)\(auxString).png")
         tercoAnimation2.append(terco!)
-    } else if aux<15 {
+    } else if aux<14 {
         let terco = UIImage(named: "\(name)\(auxString).png")
         tercoAnimation3.append(terco!)
-    } else if aux<17 {
+    } else if aux<16 {
         let terco = UIImage(named: "\(name)\(auxString).png")
         tercoAnimation4.append(terco!)
     } else if aux<18 {
@@ -66,7 +66,7 @@ public class SecondViewController: UIViewController {
     let dedePraying = UILabel()
     let next1 = UIButton()
     let tercoView = UIImageView(frame: CGRect(x: 884, y: 101, width: 420, height: 728))
-    
+        
     public override func loadView(){
         let view = UIView()
         view.backgroundColor = .myWhite
@@ -162,7 +162,7 @@ public class SecondViewController: UIViewController {
             dedeTalking.text = "You pray mysteries for each of the five sections (decades) of the rosary according to the day of the week, every day has 5 mysteries"
             next1.isHidden = false
             tercoView.animationImages = tercoAnimation6
-            tercoView.animationDuration = 1.5
+            tercoView.animationDuration = 1.2
             tercoView.startAnimating()
         }else if count == 8{
             dedeTalking.frame = CGRect(x: 70, y: 50, width: 600, height: 300)
@@ -245,7 +245,7 @@ public class SecondViewController: UIViewController {
             dedeTalking.frame = CGRect(x: 70, y: 50, width: 600, height: 300)
             dedeTalking.text = "You pray mysteries for each of the five sections (decades) of the rosary according to the day of the week, every day has 5 mysteries"
              tercoView.animationImages = tercoAnimation6
-             tercoView.animationDuration = 1.5
+             tercoView.animationDuration = 1.2
              tercoView.startAnimating()
             next1.isHidden = false
         } else if count == 8{
