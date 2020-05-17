@@ -4,6 +4,7 @@ import PlaygroundSupport
 import SpriteKit
 
 let animations = Animations(name: "terco")
+let dede = Dede(name: "Composição 1_000")
 
 public class SecondViewController: UIViewController {
     
@@ -15,6 +16,7 @@ public class SecondViewController: UIViewController {
     let dedePraying = UILabel()
     let next1 = UIButton()
     let tercoView = UIImageView(frame: CGRect(x: 884, y: 101, width: 420, height: 728))
+    let dedeBlinking = UIImageView(frame: CGRect(x: -943, y: 317, width: 2430, height: 1165))
     
     public override func loadView(){
         let view = UIView()
@@ -54,11 +56,14 @@ public class SecondViewController: UIViewController {
         dedeTalking.numberOfLines = 3
         dedeTalking.lineBreakMode = .byWordWrapping
         dedeTalking.textColor = .black
-        
+                
         tercoView.animationImages = animations.tercos[0] //tercoAnimation1
-        
         tercoView.animationDuration = 1.2
         tercoView.startAnimating()
+        
+        dedeBlinking.animationImages = dede.tercos[0]
+        dedeBlinking.animationDuration = 2.0
+        dedeBlinking.startAnimating()
         
         view.addSubview(rosaryView)
         view.addSubview(baloomImageView)
@@ -66,6 +71,7 @@ public class SecondViewController: UIViewController {
         view.addSubview(next1)
         view.addSubview(back)
         view.addSubview(tercoView)
+        view.addSubview(dedeBlinking)
         self.view = view
     }
     
