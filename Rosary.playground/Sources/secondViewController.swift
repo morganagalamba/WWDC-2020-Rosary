@@ -4,7 +4,7 @@ import PlaygroundSupport
 import SpriteKit
 
 let animations = Animations(name: "terco")
-let dede = Dede(name: "Composição 1_000")
+let dede = Dede(name: "Composição 1_")
 
 
 
@@ -19,7 +19,7 @@ public class SecondViewController: UIViewController {
     let dedePraying = UILabel()
     let next1 = UIButton()
     let tercoView = UIImageView(frame: CGRect(x: 884, y: 101, width: 420, height: 728))
-    let dedeBlinking = UIImageView(frame: CGRect(x: -943, y: 317, width: 2430, height: 1165))
+    let dedeBlinking = UIImageView(frame: CGRect(x: -1150, y: -100, width: 2900, height: 1700))
     
     public override func loadView(){
         let view = UIView()
@@ -29,9 +29,9 @@ public class SecondViewController: UIViewController {
         rosaryView.frame = CGRect(x: 720, y: 0, width: 720, height: 900)
         
         let baloomImageView = UIImageView(image: baloom)
-        baloomImageView.frame = CGRect(x: 50, y: 30, width: 626, height: 450)
+        baloomImageView.frame = CGRect(x: 50, y: 30, width: 635, height: 455)
         
-        next1.frame = CGRect(x: 555, y: 420, width: 102, height: 59)
+        next1.frame = CGRect(x: 555, y: 425, width: 102, height: 59)
         next1.layer.cornerRadius = 12
         next1.setTitleColor(.white, for: .normal)
         next1.setTitle("next", for:.normal)
@@ -42,7 +42,7 @@ public class SecondViewController: UIViewController {
         next1.layer.cornerRadius = 20
         next1.isHidden = false
         
-        back.frame = CGRect(x: 450, y: 420, width: 102, height: 59)
+        back.frame = CGRect(x: 450, y: 425, width: 102, height: 59)
         back.layer.cornerRadius = 12
         back.setTitleColor(.white, for: .normal)
         back.setTitle("back", for:.normal)
@@ -54,7 +54,7 @@ public class SecondViewController: UIViewController {
         back.layer.cornerRadius = 20
         
         dedeTalking.frame = CGRect(x: 70, y: 170, width: 600, height: 70)
-        dedeTalking.text = "Hi, I am dede! And I will teach you how to pray the rosary"
+        dedeTalking.text = "Hi, I am Dede! And I will teach you how to pray the rosary."
         dedeTalking.font = UIFont(name: "HelveticaNeue", size: 24)
         dedeTalking.numberOfLines = 3
         dedeTalking.lineBreakMode = .byWordWrapping
@@ -93,12 +93,12 @@ public class SecondViewController: UIViewController {
             back.isHidden = false
         } else if count == 2{
             dedeTalking.frame = CGRect(x: 70, y: 30, width: 600, height: 400)
-            dedeTalking.text = "I believe in God, the Father almighty,creator of heaven and earth.I believe in Jesus Christ, his only Son, our Lord.He was conceived by the power of the Holy Spirit and born of the virgin Mary.He suffered under Pontius Pilate,was crucified, died, and was buried.He descended to the dead.On the third day he rose again.He ascended into heaven,and is seated at the right hand of the Father.He will come again to judge the living and the dead.I believe in the Holy Spirit,the holy catholic Church,the communion of the saints,the forgiveness of sins,the resurrection of the body,and the life everlasting. Amen."
+            dedeTalking.text = "I believe in God, the Father almighty, creator of heaven and earth. I believe in Jesus Christ, his only Son, our Lord. He was conceived by the power of the Holy Spirit and born of the virgin Mary. He suffered under Pontius Pilate, was crucified, died, and was buried. He descended to the dead. On the third day he rose again. He ascended into heaven, and is seated at the right hand of the Father. He will come again to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of the saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen."
             dedeTalking.numberOfLines = 50
             next1.isHidden = false
         } else if count == 3{
             dedeTalking.frame = CGRect(x: 70, y: 30, width: 600, height: 300)
-            dedeTalking.text =  "On the next large bead, pray the Our Father: \n\nOur Father, Who art in heaven,Hallowed be Thy Name.Thy Kingdom come.Thy Will be done,on earth as it is in Heaven.Give us this day our daily bread.And forgive us our trespasses,as we forgive those who trespass against us.And lead us not into temptation,but deliver us from evil. Amen."
+            dedeTalking.text =  "On the next large bead, pray the Our Father: \n\nOur Father, Who art in heaven,Hallowed be Thy Name. Thy Kingdom come. Thy Will be done, on earth as it is in Heaven. Give us this day our daily bread. And forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. Amen."
             next1.isHidden = false
             tercoView.animationImages = animations.tercos[1] //tercoAnimation2
             tercoView.animationDuration = 1.2
@@ -162,7 +162,7 @@ public class SecondViewController: UIViewController {
             tercoView.startAnimating()
         } else {
             dedeTalking.frame = CGRect(x: 70, y: 50, width: 600, height: 300)
-            dedeTalking.text = "That's how you pray the Rosary! I hope you learned it"
+            dedeTalking.text = "That's how you pray the Rosary! I hope you learned it."
             next1.isHidden = true
             back.isHidden = false
             hiView.isHidden = false
@@ -174,7 +174,7 @@ public class SecondViewController: UIViewController {
         count = count - 1
         
         if count == 0 {
-            dedeTalking.text = "Hi, I am dede! And I will teach you how to pray the rosary"
+            dedeTalking.text = "Hi, I am Dede! And I will teach you how to pray the rosary."
             next1.isHidden = false
             hiView.isHidden = false
             back.isHidden = true
@@ -189,7 +189,7 @@ public class SecondViewController: UIViewController {
             hiView.isHidden = true
         }else if count == 2{
             dedeTalking.frame = CGRect(x: 70, y: 30, width: 600, height: 400)
-            dedeTalking.text = "I believe in God, the Father almighty,creator of heaven and earth.I believe in Jesus Christ, his only Son, our Lord.He was conceived by the power of the Holy Spirit and born of the virgin Mary.He suffered under Pontius Pilate,was crucified, died, and was buried.He descended to the dead.On the third day he rose again.He ascended into heaven,and is seated at the right hand of the Father.He will come again to judge the living and the dead.I believe in the Holy Spirit,the holy catholic Church,the communion of the saints,the forgiveness of sins,the resurrection of the body,and the life everlasting. Amen."
+            dedeTalking.text = "I believe in God, the Father almighty, creator of heaven and earth. I believe in Jesus Christ, his only Son, our Lord. He was conceived by the power of the Holy Spirit and born of the virgin Mary. He suffered under Pontius Pilate, was crucified, died, and was buried. He descended to the dead. On the third day he rose again. He ascended into heaven, and is seated at the right hand of the Father. He will come again to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of the saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen."
             next1.isHidden = false
             dedeTalking.numberOfLines = 50
             tercoView.animationImages = animations.tercos[0] //tercoAnimation1
@@ -198,7 +198,7 @@ public class SecondViewController: UIViewController {
             hiView.isHidden = true
         } else if count == 3{
             dedeTalking.frame = CGRect(x: 70, y: 30, width: 600, height: 300)
-            dedeTalking.text =  "On the next large bead, pray the Our Father: \n\nOur Father, Who art in heaven,Hallowed be Thy Name.Thy Kingdom come.Thy Will be done,on earth as it is in Heaven.Give us this day our daily bread.And forgive us our trespasses,as we forgive those who trespass against us.And lead us not into temptation,but deliver us from evil. Amen."
+            dedeTalking.text =  "On the next large bead, pray the Our Father: \n\nOur Father, Who art in heaven,Hallowed be Thy Name. Thy Kingdom come. Thy Will be done, on earth as it is in Heaven. Give us this day our daily bread. And forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. Amen."
             next1.isHidden = false
             tercoView.animationImages = animations.tercos[1] //tercoAnimation2
             tercoView.animationDuration = 1.2

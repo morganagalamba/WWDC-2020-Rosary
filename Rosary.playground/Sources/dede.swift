@@ -13,7 +13,7 @@ public class Dede {
         
         var aux = 0 ;
         
-        while aux<59 {
+        while aux<75 {
             let auxString = String(aux)
                 let terco = UIImage(named: "\(name)\(auxString).png")
                 tercoAnimation1.append(terco!)
